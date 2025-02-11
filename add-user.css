@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    padding: 44px;
+    background: white;
+    border-radius: 5px;
+}
+
+h2,p{
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #0f172a;
+}
+
+label{
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+}
+
+input, select{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+input:focus , select:focus{
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* .show-pass{
+    border: none;
+    background: #ddd;
+    padding: 5px;
+    /* color: white; 
+    border-radius: 3px; 
+    cursor: pointer;
+    margin-bottom: 14px;
+}*/
+
+.submit-btn{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #051f3a;
+    cursor: pointer;
+    width: 83%;
+    font-size: 10px;
+}
+
+.submit-btn:hover{
+    background-color: #05294d;
+    transform: scale(1.05);
+}

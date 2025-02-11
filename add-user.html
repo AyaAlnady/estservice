@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <link rel="stylesheet" href="add-user.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New User</h2>
+        <p>Create a brand new user and add them to this site.</p>
+
+    <form action="">
+        <label for="username">Username <span>(required)</span></label>
+        <input type="text" name="username" required id="username" placeholder="Username">
+
+        <label for="email">Email <span>(required)</span></label>
+        <input type="email" name="email" required id="email" placeholder="Email">
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="password">
+        <!-- <button type="button" class="show-pass">Show Password</button> -->
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="subscriber">Subscriber</option>
+            <option value="editor">Editor</option>
+            <option value="administrator">Administrator</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Add User</button>
+
+    </form>
+    </div>
+</body>
+</html>
