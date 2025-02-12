@@ -30,6 +30,7 @@ form{
 }
 
 label{
+    width: 80%;
     font-weight: bold;
     margin: 10px;
     text-align: left;
@@ -46,9 +47,9 @@ input, select{
 
 
 input:focus , select:focus{
-    border-color: #007bff;
+    border-color: #0f172a;
     outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 8px rgba(11, 91, 176, 0.5);
 }
 
 /* .show-pass{
