@@ -4,23 +4,34 @@
     box-sizing: border-box;
 }
 
+:root{
+    --link-color:#6a89cc;
+    --link-hover-color:#0b1e7d;
+    --color-background: white;
+    --blue-text-color: #0b0b3b;
+    --color-primary-dark: #05294d;
+    --color-border: #ccc;
+    --color-shadow: #0b5bb080;
+    --color-text: var(--blue-text-color);
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--color-background);
     padding: 20px;
 
 }
 
 /*header*/
 .header {
-    background: white;
+    background: var(--color-background);
     width: 100%;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ddd;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--color-border);
+    box-shadow: 0px 2px 5px var(--color-border);
     margin-bottom: 20px;
 }
 
@@ -28,22 +39,28 @@ body {
 .header-title {
     margin: 0;
     font-size: 22px;
-    color: darkblue;
+    color: var(--blue-text-color);
 }
 .search-box {
     padding: 7px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
     width: 250px;
+}
+
+.search-box:focus{
+    border-color: var(--blue-text-color);
+    outline: none;
+    box-shadow: 0 0 8px var(--color-shadow);
 }
 
 /* table*/
 .users-table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: var(--color-background);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--color-border);
     overflow: hidden;
 }
 
@@ -55,17 +72,17 @@ body {
 .users-table th, .users-table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .users-table th {
-    background: #f8f8f8;
-    background: #090641;
-    color: aliceblue;
+    background: var(--color-background);
+    background: var(--blue-text-color);
+    color: var(--color-background);
 }
 
 .users-table tr:hover {
-    background: #f1f1f1;
+    background: var(--color-background);
 }
 
 
