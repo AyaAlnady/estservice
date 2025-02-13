@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/add-user.css">
 </head>
@@ -12,33 +13,51 @@
             <h2>Add New User</h2>
             <p>Create a brand new user and add them to this site.</p>
 
-        <form action="">
-            <label for="username">Username <span>(required)</span></label>
-            <input type="text" name="username" required id="username" placeholder="Username">
+        <form action="" >
+            <div class="input-div">
+                <label for="username">Username <span>(required)</span></label>
+                <input type="text" name="username" required id="username" placeholder="Username">
+            </div>
 
-            <label for="email">Email <span>(required)</span></label>
-            <input type="email" name="email" required id="email" placeholder="Email">
+            <div class="input-div">
+                <label for="email">Email <span>(required)</span></label>
+                <input type="email" name="email" required id="email" placeholder="Email">
+            </div>
 
-            <label for="firstname">First Name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            <div class="input-div">
+                <label for="firstname">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            </div>
 
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            <div class="input-div">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            </div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="password">
+            <div class="input-div">
+                <label for="password">Password</label>
+                <div class="password-with-icon">
+                    <input type="password" id="password" name="password" placeholder="password">
+                </div>
+            </div>
             <!-- <button type="button" class="show-pass">Show Password</button> -->
 
-            <label for="role">Role</label>
-            <select id="role" name="role">
-                <option value="subscriber">Subscriber</option>
-                <option value="editor">Editor</option>
-                <option value="administrator">Administrator</option>
-            </select>
+            <div class="input-div">
+                <label for="role">Role</label>
+                <select id="role" name="role">
+                    <option value="subscriber">Subscriber</option>
+                    <option value="editor">Editor</option>
+                    <option value="administrator">Administrator</option>
+                </select>
+            </div>
 
-            <button type="submit" class="submit-btn">Add User</button>
+            <div class="input-div">
+                <button type="submit" class="submit-btn">Add User</button>
+            </div>
 
         </form>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
