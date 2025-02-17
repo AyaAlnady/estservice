@@ -16,6 +16,8 @@
   --color-border: #ccc;
   --color-shadow: #0b5bb080;
   --color-text: var(--blue-text-color);
+  --main-transtion: all 100ms linear 5ms;
+  --dely-duration: 100ms;
 }
 
 

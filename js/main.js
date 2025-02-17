@@ -17,3 +17,12 @@ $(document).ready(function(){
 });
 
 
+//For Aside
+$(document).ready(function () {
+  let MenuItems  = $('.menue-item > a');
+  MenuItems.each(function(i, ele){
+    $(ele).on('click', function(){
+      $(this).parent().toggleClass('open');
+    })
+  })
+});
