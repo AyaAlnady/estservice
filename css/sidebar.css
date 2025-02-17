@@ -4,7 +4,7 @@
     height: 100%;
     background-color: white;
     padding-top: 20px;
-    position: fixed;
+    /* position: fixed; */
     overflow: auto;
     border-right: 1px solid;
 

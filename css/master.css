@@ -25,14 +25,56 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--color-background);
 }
+#main{
+  display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-content{
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+
+/* ======================================== Start From ================================= */
+
+.main-form{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form h2,
+.main-form p{
+  color: var(--blue-text-color);
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.main-form p{
+  margin: 10px;
+  font-size: 16px;
+}
+
 
 form{
   display: flex;
   align-items: center;
   flex-direction: column;
   color: var(--blue-text-color);
+  border: 1px solid var(--blue-text-color);
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 
+form .row{
+  width: 100%;
+}
 
 
 .input-div{
@@ -40,23 +82,25 @@ form{
   flex-direction: column;
   gap: 10px;
   margin: 10px 0;
-  width: 90%  ;
-  justify-content: center;
-  align-items: center;
 }
+
+
+
 .input-div label{
-  width: 80%;
   font-weight: bold;
-  margin: 10px;
   text-align: left;
 }
-.input-div input{
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 15px;
+.input-div input,
+.input-div select{
   border: 1px solid var(--color-border);
   border-radius: 5px;
   font-size: 15px;
+  height: 40px;
+  padding: 15px;
+}
+
+.input-div select{
+  padding: 5px;
 }
 .input-div input:hover,
 .input-div input:focus,
@@ -81,29 +125,32 @@ button[type="submit"]{
   margin-top: 15px;
   background-color: var(--blue-text-color);
   cursor: pointer;
-  width: 80%;
-  font-size: 10px;
+  width: 90%;
+  font-size: 14px;
+  align-self: center;
+  transition: var(--main-transtion);
 }
 input[type="submit"]:hover,
 button[type="submit"]:hover{
   background-color: var(--color-primary-dark);
-  transform: scale(1.05);
+  /* transform: scale(1.1); */
 }
 
 
 .password-with-icon{
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 .password-with-icon input{
   width: 100%;
 }
 .password-with-icon .eye{
   position: absolute;
-  top: 37%;
-  right: 4px;
+  top: 50%;
+  right: 1px;
   transform: translate(-50%, -50%);
   font-size: 16px;
   cursor: pointer;
 }
 
+/* ======================================== End From ================================= */
